@@ -1,0 +1,72 @@
+# ~/.config/starship.toml
+# Beispiel-Config für Starship
+
+# --- Prompt-Symbol ---
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[✗](bold red) "
+
+# --- Benutzer & Host ---
+[username]
+style_user = "bold blue"
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[@$hostname](bold purple) "
+disabled = false
+
+# --- Uhrzeit ---
+[time]
+disabled = false
+time_format = "%H:%M:%S"      # Format wie bei strftime
+format = "🕒 [$time]($style) "
+style = "bold yellow"
+
+# --- Git ---
+[git_branch]
+symbol = "🌱 "
+format = "[$symbol$branch]($style) "
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "🆕 ${count}"
+stashed = "📦 "
+modified = "✏️ ${count}"
+staged = "✔️ ${count}"
+renamed = "🔀 ${count}"
+deleted = "🗑️ ${count}"
+
+# --- Programmiersprachen & Tools ---
+[python]
+symbol = "🐍 "
+pyenv_version_name = true
+format = "[$symbol$version]($style) "
+
+[nodejs]
+symbol = "⬢ "
+format = "[$symbol$version]($style) "
+
+[rust]
+symbol = "🦀 "
+format = "[$symbol$version]($style) "
+
+[docker_context]
+symbol = "🐳 "
+format = "[$symbol$context]($style) "
+
+# --- Verzeichnis ---
+[directory]
+truncation_length = 4
+truncation_symbol = "…/"
+style = "bold cyan"
+
+# --- Batterie (für Laptops) ---
+[battery]
+full_symbol = "🔋 "
+charging_symbol = "⚡ "
+discharging_symbol = "💀 "
+
