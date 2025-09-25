@@ -1,5 +1,5 @@
-# theme = Gruvbox Dark
-theme = Catppuccin Mocha
+theme = Gruvbox Dark
+#theme = Catppuccin Mocha
 font-family = 3270 Nerd Font Regular
 font-size = 16
 background-opacity = 0.85
